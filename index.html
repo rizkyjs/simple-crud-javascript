@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.9/sweetalert2.min.css">
+  <title>simple crud javascript</title>
+</head>
+<body>
+
+  <div class="container my-3">
+
+    <div class="bg-primary bg-gradient p-4 rounded">
+      <h1 class="fw-normal text-white">Simple Crud Javascript</h1>
+      <p class="fw-light text-light">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil facilis eaque quia modi odit quod porro, mollitia quos, natus dignissimos saepe, consequuntur!
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-md mx-auto">
+
+        <div class="d-flex justify-content-between align-items-center my-3">
+          <div class="col-md-3">
+            <button class="btn btn-outline-primary rounded-1 btn-add" data-bs-toggle="modal" data-bs-target="#modal">Add Data</button>
+          </div>
+          <div class="col-md-6">
+            <!-- form -->
+            <div class="input-group">
+              <input type="text" class="form-control search" placeholder="search ..." autocomplete="off">
+            </div>
+          </div>
+        </div>
+
+        <!-- table -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="table-light">
+              <tr>
+                <th class="fw-normal p-3">Name</th>
+                <th class="fw-normal p-3">Email</th>
+                <th class="fw-normal p-3">Option</th>
+              </tr>
+            </thead>
+            <tbody class="table-container">
+              <!--
+              <tr>
+                <td class="fw-light p-3">candra dwi cahyo</td>
+                <td class="fw-light p-3">candradwicahyo@gmail.com</td>
+                <td class="p-3">
+                  <div class="option-wrapper">
+                    <button class="btn btn-outline-primary m-2 edit" data-bs-toggle="modal" data-bs-target="#exampleModal">edit</button>
+                    <button class="btn btn-outline-danger delete">delete</button>
+                  </div>
+                </td>
+              </tr>
+              -->
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal tambah -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-normal" id="exampleModalLabel">Form Modal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group mb-3">
+              <label for="#name" class="form-label fw-light">Name</label>
+              <input type="text" id="name" class="form-control name" placeholder="name..." autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="#email" class="form-label fw-light">Email Address</label>
+              <input type="email" id="email" class="form-control email" placeholder="example@example.com" autocomplete="off">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary rounded-1" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-outline-primary rounded-1 btn-submit">add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.9/sweetalert2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
